@@ -4,7 +4,7 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
-    "build": "remix vite:build",
+    "build": "remix build",
     "dev": "remix vite:dev",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "remix-serve ./build/server/index.js",
@@ -18,6 +18,7 @@
     "@reown/walletkit": "^1.2.0",
     "@tanstack/react-query": "^5.66.0",
     "@tanstack/react-query-devtools": "^5.66.0",
+    "@vanilla-extract/sprinkles": "^1.6.3",
     "@walletconnect/core": "^2.18.0",
     "@walletconnect/utils": "^2.18.0",
     "abitype": "^1.0.8",
@@ -55,7 +56,7 @@
     "vite-tsconfig-paths": "^4.2.1"
   },
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=18.x"
   },
   "version": "1.0.0",
   "description": "- 📖 [Remix docs](https://remix.run/docs)",
