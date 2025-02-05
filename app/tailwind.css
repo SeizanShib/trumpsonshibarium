@@ -2,11 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  @apply bg-white dark:bg-gray-950;
+:root {
+  color-scheme: dark;
+}
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
+body {
+  background: #0a1445;
+  color: white;
+}
+
+/* 🌟 Glassmorphism Effects */
+@layer utilities {
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10;
   }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-orange-500 via-yellow-500 to-orange-500 text-transparent bg-clip-text;
+  }
+}
+
+/* 🌟 Background Gradient */
+.bg-theme-gradient {
+  background: linear-gradient(135deg, #0a1445 0%, #1a2463 100%);
+}
+
+/* 🛠 Fix WalletConnect Dropdown Position */
+.z-50 {
+  z-index: 50 !important;
+}
+
+.rainbowkit-connect-button {
+  position: relative !important;
+}
+
+.rainbowkit-connect-button__dropdown {
+  position: absolute !important;
+  top: 100% !important;
+  left: 0 !important;
+  transform: translateY(10px) !important;
 }
