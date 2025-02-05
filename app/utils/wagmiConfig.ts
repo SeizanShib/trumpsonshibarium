@@ -29,7 +29,7 @@ export const wagmiConfig = createConfig({
     coinbaseWallet({ appName: "Trumps on Shibarium" }), // Coinbase Wallet
   ],
   transports: {
-    [shibariumChain.id]: http(),
-    [puppynetChain.id]: http(),
+    [shibariumChain.id]: http(shibariumChain.rpcUrls.default.http[0]),
+    [puppynetChain.id]: http(puppynetChain.rpcUrls.default.http[0]),
   },
 });
