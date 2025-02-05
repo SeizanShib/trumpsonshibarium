@@ -2,18 +2,18 @@
 //import { marketplaceABI } from './marketplaceABI';
 
 // Contract addresses on Shibarium Puppynet (Chain ID: 157)
-export const NFT_CONTRACT_ADDRESS = '0xc2aAFb0B92b5B5660C303EcCf4772091Fc8fF548';
-export const KNBONE_CONTRACT_ADDRESS = '0xC7e29EA23E3dAb1E1bc891674dCF631cb8569f00';
-export const KN_BONE_TOKEN_ADDRESS = '0xC7e29EA23E3dAb1E1bc891674dCF631cb8569f00';
+export const NFT_CONTRACT_ADDRESS = '0x89bAE31C6C3EA4Cb149A6E9BC62d3e55036B459A';
+export const KNBONE_CONTRACT_ADDRESS = '0x3358FCA51d7C0408750FBbE7777012E0b67C027F';
+export const KN_BONE_TOKEN_ADDRESS = '0x3358FCA51d7C0408750FBbE7777012E0b67C027F';
 // TODO: Replace with actual marketplace contract address
-export const MARKETPLACE_CONTRACT_ADDRESS = '0x354a2f61D196998F518b665e52b266bBA8F927aA';
+export const MARKETPLACE_CONTRACT_ADDRESS = '0x0f4CdBa388880913d38c94be7d274da128b06585';
 
 export { nftContractABI, marketplaceABI };
 
 export const contractAddresses = {
-    nftContract: "0xc2aAFb0B92b5B5660C303EcCf4772091Fc8fF548",
-    knBoneToken: "0xC7e29EA23E3dAb1E1bc891674dCF631cb8569f00",
-    marketplace: "0x354a2f61D196998F518b665e52b266bBA8F927aA",
+    nftContract: "0x89bAE31C6C3EA4Cb149A6E9BC62d3e55036B459A",
+    knBoneToken: "0x3358FCA51d7C0408750FBbE7777012E0b67C027F",
+    marketplace: "0x0f4CdBa388880913d38c94be7d274da128b06585",
   };
   
   import { nftContractABI } from "./nftContractABI"; // ✅ Ensure ABI is imported
