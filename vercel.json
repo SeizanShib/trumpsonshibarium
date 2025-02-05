@@ -1,0 +1,13 @@
+{
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/static-build"
+      }
+    ],
+    "outputDirectory": "build",
+    "env": {
+      "NODE_VERSION": "20.x"
+    }
+  }
+  
