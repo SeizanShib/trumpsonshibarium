@@ -13,4 +13,16 @@ export default defineConfig({
   define: {
     "process.env": {},
   },
+  build: {
+    rollupOptions: {
+      external: ["@vanilla-extract/sprinkles/createUtils"], // Externalize problematic module
+      output: {
+        manualChunks(id) {
+          if (id.includes("@rainbow-me/rainbowkit")) {
+            return "rainbowkit"; // Create a separate chunk for rainbowkit
+          }
+        },
+      },
+    },
+  },
 });
